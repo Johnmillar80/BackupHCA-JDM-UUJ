@@ -39,7 +39,8 @@ body {
 }
 
 .chat #chatOutput {
-    overflow-y: scroll;
+    overflow-y: auto;
+    scroll-behavior: auto;
     height: 350px;
     width: 100%;
     border: 2px solid black;
@@ -56,10 +57,15 @@ body {
 
 .chat #chatSend {
     width: 25%;
-    color: darkgray;
+    color: white;
+    background-color: #4286f4;
     border-color: black;
 }
 
 
 /*Generator*/
 
+#randform{
+
+    padding-top: 10px;
+}
