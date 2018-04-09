@@ -12,8 +12,8 @@ include("verify.php");
 <body>
 <div class="form">
 <p>Welcome <?php echo $_SESSION['username']; ?>!</p>
-<p>This is secure area.</p>
-<p><a href="dashboard.php">Dashboard</a></p>
+<p>Please Choose From One of the Links Below</p>
+<p><a href="portal.php">Dashboard</a></p>
 <a href="logout.php">Logout</a>
 </div>
 </body>

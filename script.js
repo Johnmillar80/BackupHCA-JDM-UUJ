@@ -17,7 +17,7 @@ $(document).ready(function () {
         var userNameString = $userName.val();
         var chatInputString = $chatInput.val();
 
-        $.get("write.php", {
+        $.get("writetochat.php", {
             username: userNameString,
             text: chatInputString
         });
@@ -27,7 +27,7 @@ $(document).ready(function () {
     }
 
     function retrieveMessages() {
-        $.get("read.php", function (data) {
+        $.get("readfromchat.php", function (data) {
             $chatOutput.html(data); //Paste content into chat output
         });
     }

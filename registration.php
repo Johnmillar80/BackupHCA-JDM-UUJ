@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-require('db.php');
+require('database.php');
 // If form submitted, insert values into the database.
 if (isset($_REQUEST['username'])){
         // removes backslashes
@@ -29,12 +29,12 @@ if (isset($_REQUEST['username'])){
     $employer = mysqli_real_escape_string($con,$employer);
     $nhs_employee_code =($_REQUEST['nhs_employee_code']);
     $nhs_employee_code = mysqli_real_escape_string($con,$nhs_employee_code);    
-        $query = "INSERT into `users` (username, password, email, trn_date, address, university, qualification, employer, nhs_employee_code)
+        $query = "INSERT into `councillors` (username, password, email, trn_date, address, university, qualification, employer, nhs_employee_code)
 VALUES ('$username', '".md5($password)."', '$email', '$trn_date', '$address', '$university', '$qualification', '$employer', '$nhs_employee_code')";
         $result = mysqli_query($con,$query);
         if($result){
             echo "<div class='form'>
-<h3>You are registered successfully.</h3>
+<h3>Thank You For Registering!</h3>
 <br/>Click here to <a href='login.php'>Login</a></div>";
         }
     }else{
