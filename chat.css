@@ -1,3 +1,10 @@
+body{
+
+background-color: #343a40;
+
+}
+
+
 /* Main chat container */
 
 #chatContainer{
@@ -12,7 +19,7 @@
 
 #chatTopBar{
 	height:40px;
-	background:url('images/solid_gray.jpg') repeat-x #d0d0d0;
+	background-color: lightgray;
 	border:1px solid #fff;
 	margin-bottom:15px;
 	position:relative;
@@ -36,7 +43,6 @@
 
 /* Chats */
 
-
 #chatLineHolder{
 	height:360px;
 	width:350px;
@@ -44,7 +50,7 @@
 }
 
 .chat{
-	background:url('images/chat_line_bg.jpg') repeat-x #d5d5d5;
+	background-color: white;
 	min-height:24px;
 	padding:6px;
 	border:1px solid #FFFFFF;
@@ -102,7 +108,7 @@
 
 
 #chatUsers{
-	background-color:#202020;
+	background-color: lightgray;
 	border:1px solid #111111;
 	height:360px;
 	position:absolute;
@@ -112,7 +118,7 @@
 }
 
 #chatUsers .user{
-	background:url('http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?size=30') no-repeat 1px 1px #444444;
+	background-color: lightgray;
 	border:1px solid #111111;
 	float:left;
 	height:32px;
@@ -131,7 +137,7 @@
 
 
 #chatBottomBar{
-	background:url('images/solid_gray.jpg') repeat-x #d0d0d0;
+	background-color: white;
 	position:relative;
 	padding:10px;
 	border:1px solid #fff;
@@ -148,7 +154,7 @@
 }
 
 #chatContainer input{
-	background:url('images/input_bg.jpg') repeat-x #dcdcdc;
+	background-color: white;
 	height:26px;
 	font:13px/26px Calibri,Arial,sans-serif;
 	color:#777;

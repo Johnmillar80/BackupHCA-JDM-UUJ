@@ -51,7 +51,7 @@ VALUES ('$username', '".md5($password)."', '$email', '$trn_date', '$address', '$
 <input type="employer" name="employer" placeholder="Employer" required />
 <input type="nhs_employee_code" name="nhs_employee_code" placeholder="NHS Employee Code" required />
 <input type="submit" name="submit" value="Register" />
-<p>Return to our Homepage? <a href='index.html'>Home</a></p>
+<p>Return to our Homepage? <a href='../index.html'>Home</a></p>
 </form>
 </div>
 <?php } ?>

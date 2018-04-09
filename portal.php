@@ -42,19 +42,19 @@ include("verify.php");
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="categories.html">Live Chat</a>
+              <a class="nav-link" href="../categories.html">Live Chat</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="information.html">Information</a>
+              <a class="nav-link" href="../information.html">Information</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
+              <a class="nav-link" href="../about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="../contact.html">Contact Us</a>
             </li>
            <li class="nav-item">
-              <a class="nav-link" href="login.php">Log In / Register</a>
+              <a class="nav-link" href="../LoginReg/login.php">Log In / Register</a>
             </li>
           </ul>
         </div>
@@ -73,29 +73,65 @@ include("verify.php");
 <!--Portal Form-->
 
 <div class="form">
-<p>Portal</p>
-<p>Welcome to your Home.</p>
+<h3>Councillor Portal</h3>
+<h3>Welcome to your Home.</h3>
 <div class="row">
   <div class="col-sm-4"><div class="team">
   <img src="images/home.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a href="index.html">Home</a></p>
+  <p><a href="../index.html">Home</a></p>
 </div></div>
 
   <div class="col-sm-4"><div class="team">
   <img src="images/livechat.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a href="logout.php">Live Chat</a></p>
+  <p><a href="../categories.html">Live Chat</a></p>
 </div></div>
 
   <div class="col-sm-4"><div class="team">
+  <img src="images/calendarportal.png" alt="Calendar" style="width:100%" class="w3-circle w3-hover-opacity">
+  <p><a href="../calendar/index.php">Calendar</a></p>
+</div></div>
+</div>
+
+<!-- Second Tier Private Appointments-->
+
+<h3>Private Appointments</h3>
+
+<div class="row">
+  <div class="col-sm-4"><div class="team">
+  <img src="images/mental.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
+  <p><a href="../appointmentchat/ajax-chat.html">Mental</a></p>
+</div></div>
+
+  <div class="col-sm-4"><div class="team">
+  <img src="images/emotion.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
+  <p><a href="../appointmentchat/ajax-chat.html">Emotional</a></p>
+</div></div>
+
+  <div class="col-sm-4"><div class="team">
+  <img src="images/money.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
+  <p><a href="../appointmentchat/ajax-chat.html">Financial</a></p>
+</div></div>
+
+<!--Third Tier Logout-->
+
+ <div class="col-sm-4"><div class="team">
+  <img style="width:100%" class="w3-circle w3-hover-opacity">
+  <p><a></a></p>
+</div></div>
+
+ <div class="col-sm-4"><div class="team">
   <img src="images/logout.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
   <p><a href="logout.php">Logout</a></p>
+</div></div>
+
+ <div class="col-sm-4"><div class="team">
+  <img style="width:100%" class="w3-circle w3-hover-opacity">
+  <p><a></a></p>
 </div></div>
 </div>
 
 
 </div>
-
-
  
 </body>
 
@@ -107,12 +143,12 @@ include("verify.php");
 <div class="jumbotron-special">
 <div class="container"> 
   <div class="hyperlink"> <!--footer links-->
-    <a href="index.html" class="hyperlink">Home</a>
-    <a href="categories.html" class="hyperlink">Live Chat</a>
-    <a href="information.html" class="hyperlink">Information</a>
-    <a href="about.html" class="hyperlink">About Us</a>
-    <a href="contact.html" class="hyperlink">Contact Us</a>
-    <a href="login.php" class="hyperlink">Login / Register</a>
+    <a href="../index.html" class="hyperlink">Home</a>
+    <a href="../categories.html" class="hyperlink">Live Chat</a>
+    <a href="../information.html" class="hyperlink">Information</a>
+    <a href="../about.html" class="hyperlink">About Us</a>
+    <a href="../contact.html" class="hyperlink">Contact Us</a>
+    <a href="../login.php" class="hyperlink">Login / Register</a>
     <div class="row"> <!--Social Media Icon Links-->
         <div class="col-sm-4"><img class="img-fluid" href="" src="images/FB.png" alt="Facebook" width="100" height="100" ></div>
         <div class="col-sm-4"><img class="img-fluid" href="" src="images/IG.png" alt="Instagram" width="100" height="100"></div>

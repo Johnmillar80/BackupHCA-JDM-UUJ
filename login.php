@@ -36,14 +36,16 @@ and password='".md5($password)."'";
     }else{
 ?>
 <div class="form">
-<h1>Log In</h1>
+<h1>Councillor Log In</h1>
 <form action="" method="post" name="login">
 <input type="text" name="username" placeholder="Username" required />
 <input type="password" name="password" placeholder="Password" required />
 <input name="submit" type="submit" value="Login" />
 </form>
 <p>Not registered yet? <a href='registration.php'>Register Here</a></p>
-<p>Return to our Homepage? <a href='index.html'>Home</a></p>
+<p>Return to our Homepage? <a href='../index.html'>Home</a></p>
+<p> <a href="../adminlogin/login.php">...</a></p>
+
 </div>
 <?php } ?>
 </body>
