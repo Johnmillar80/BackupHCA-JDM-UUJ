@@ -1,8 +1,7 @@
 <?php
-// Enter your Host, username, password, database below.
-// I left password empty because i do not set password on localhost.
+//connects to the HCA database
 $con = mysqli_connect("localhost","root","","health_chat_anonymous");
-// Check connection
+// Checks connection
 if (mysqli_connect_errno())
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();

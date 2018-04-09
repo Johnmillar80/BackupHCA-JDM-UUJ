@@ -12,13 +12,11 @@ session_start();
 <body>
 
 <?php
-// Captcha
+// Captcha area
 if(empty($_SESSION['captcha'] ) ||
 	strcasecmp($_SESSION['captcha'], $_POST['captcha']) != 0)
 	{
-		//Note: the captcha code is compared case insensitively.
-		//if you want case sensitive match, update the check above to
-		// strcmp()
+
 		$errors = "<h3><font color=\"red\">Wrong code!</font></h3>";
 		echo $errors;
 	}
@@ -45,7 +43,7 @@ if(empty($_SESSION['captcha'] ) ||
 		$start_epoch = $start_day + $start_time;
 		$end_epoch = $end_day + $end_time;
 		
-		// prevent double booking
+		// stops the issue of double booking
 		$sql = "SELECT * FROM $tablename WHERE item='$item' AND (start_day>=$start_day OR end_day>=$start_day) AND canceled=0";
 		$result = mysqli_query($conn, $sql);
 		if (mysqli_num_rows($result) > 0) {

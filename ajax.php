@@ -1,6 +1,6 @@
 <?php
 
-/* Database Configuration. Add your details below */
+/* Connection to the HCA database */
 
 $dbOptions = array(
 	'db_host' => 'localhost',
@@ -9,7 +9,7 @@ $dbOptions = array(
 	'db_name' => 'health_chat_anonymous'
 );
 
-/* Database Config End */
+/* configuration with linked files */
 
 
 error_reporting(E_ALL ^ E_NOTICE);
@@ -32,12 +32,12 @@ if(get_magic_quotes_gpc()){
 
 try{
 	
-	// Connecting to the database
+	// Connects to the database
 	DB::init($dbOptions);
 	
 	$response = array();
 	
-	// Handling the supported actions:
+	// sorts the different sections of the chat
 	
 	switch($_GET['action']){
 		

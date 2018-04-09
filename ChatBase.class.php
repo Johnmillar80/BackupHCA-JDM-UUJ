@@ -1,10 +1,10 @@
 <?php
 
-/* This is the base class, used by both ChatLine and ChatUser */
+/* This class is used by the ChatLine class and ChatUser class */
 
 class ChatBase{
 
-	// This constructor is used by all the chat classes:
+	// All chats use this constructor
 
 	public function __construct(array $options){
 		

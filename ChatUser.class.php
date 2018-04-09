@@ -7,7 +7,7 @@ class ChatUser extends ChatBase{
 	public function save(){
 		
 		DB::query("
-			INSERT INTO webchat_users (name, gravatar)
+			INSERT INTO webchat_users (name, gravatar) /*Saves webchat users table*/
 			VALUES (
 				'".DB::esc($this->name)."',
 				'".DB::esc($this->gravatar)."'
@@ -18,7 +18,7 @@ class ChatUser extends ChatBase{
 	
 	public function update(){
 		DB::query("
-			INSERT INTO webchat_users (name, gravatar)
+			INSERT INTO webchat_users (name, gravatar) /*Updates webchat users table*/
 			VALUES (
 				'".DB::esc($this->name)."',
 				'".DB::esc($this->gravatar)."'

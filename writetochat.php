@@ -1,10 +1,10 @@
 <?php
 require("connect.php");
 
-//connect to db
+//connect to database
 $db = new mysqli($db_host,$db_user, $db_password, $db_name);
 if ($db->connect_errno) {
-    //if the connection to the db failed
+    //if connection fails
     echo "Failed to connect to MySQL: (" . $db->connect_errno . ") " . $db->connect_error;
 }
 
@@ -18,7 +18,7 @@ $textEscaped = htmlentities(mysqli_real_escape_string($db, $text)); //escape tex
 
 
 
-//create query
+//create query and insert into chatroom table
 $query="INSERT INTO chatroom (username, text) VALUES ('$nameEscaped', '$textEscaped')";
 //execute query
 if ($db->real_query($query)) {

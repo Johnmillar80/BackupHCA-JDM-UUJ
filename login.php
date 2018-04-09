@@ -11,7 +11,7 @@
 <?php
 require('database.php');
 session_start();
-// If form submitted, insert values into the database.
+//When form is submitted, insert the values into the database.
 if (isset($_POST['username'])){
         // removes backslashes
 	$username = stripslashes($_REQUEST['username']);
@@ -19,7 +19,7 @@ if (isset($_POST['username'])){
 	$username = mysqli_real_escape_string($con,$username);
 	$password = stripslashes($_REQUEST['password']);
 	$password = mysqli_real_escape_string($con,$password);
-	//Checking is user existing in the database or not
+	//Checks whether user has an account already and selects from councillors table in HCA database
         $query = "SELECT * FROM `councillors` WHERE username='$username'
 and password='".md5($password)."'";
 	$result = mysqli_query($con,$query) or die(mysql_error());
@@ -36,7 +36,7 @@ and password='".md5($password)."'";
     }else{
 ?>
 <div class="form">
-<h1>Log In</h1>
+<h1>Councillor Log In</h1>
 <form action="" method="post" name="login">
 <input type="text" name="username" placeholder="Username" required />
 <input type="password" name="password" placeholder="Password" required />
@@ -44,7 +44,8 @@ and password='".md5($password)."'";
 </form>
 <p>Not registered yet? <a href='registration.php'>Register Here</a></p>
 <p>Return to our Homepage? <a href='../index.html'>Home</a></p>
-<p> Admin Section: <a href="../adminlogin/login.php">Login</a></p>
+<p> <a href="../adminlogin/login.php">...</a></p>
+
 </div>
 <?php } ?>
 </body>

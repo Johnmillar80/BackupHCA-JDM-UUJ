@@ -12,13 +12,11 @@ session_start();
 <body>
 
 <?php
-// Captcha
+// Captcha Area
 if(empty($_SESSION['captcha2'] ) ||
 	strcasecmp($_SESSION['captcha2'], $_POST['captcha2']) != 0)
 	{
-		//Note: the captcha code is compared case insensitively.
-		//if you want case sensitive match, update the check above to
-		// strcmp()
+
 		$errors = "<h3><font color=\"red\">Wrong code!</font></h3>";
 		echo $errors;
 	}

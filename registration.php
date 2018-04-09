@@ -8,7 +8,7 @@
 <body>
 <?php
 require('database.php');
-// If form submitted, insert values into the database.
+// When form is Submitted, insert the values into the database.
 if (isset($_REQUEST['username'])){
         // removes backslashes
     $username =($_REQUEST['username']);
@@ -29,7 +29,7 @@ if (isset($_REQUEST['username'])){
     $employer = mysqli_real_escape_string($con,$employer);
     $nhs_employee_code =($_REQUEST['nhs_employee_code']);
     $nhs_employee_code = mysqli_real_escape_string($con,$nhs_employee_code);    
-        $query = "INSERT into `councillors` (username, password, email, trn_date, address, university, qualification, employer, nhs_employee_code)
+        $query = "INSERT into `councillors` (username, password, email, trn_date, address, university, qualification, employer, nhs_employee_code) /*Inserts into councillors table in HCA database*/
 VALUES ('$username', '".md5($password)."', '$email', '$trn_date', '$address', '$university', '$qualification', '$employer', '$nhs_employee_code')";
         $result = mysqli_query($con,$query);
         if($result){

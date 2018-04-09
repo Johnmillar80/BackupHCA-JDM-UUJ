@@ -1,6 +1,6 @@
 <?php
 
-/* The Chat class exploses public static methods, used by ajax.php */
+/* This Chat class shows the public static methods, which are used in the ajax.php */
 
 class Chat{
 	
@@ -13,7 +13,8 @@ class Chat{
 			throw new Exception('Your email is invalid.');
 		}
 		
-		// Preparing the gravatar hash:
+		// Prepares the gravatar hashing:
+
 		$gravatar = md5(strtolower(trim($email)));
 		
 		$user = new ChatUser(array(
@@ -52,6 +53,8 @@ class Chat{
 		return $response;
 	}
 	
+	//Deletes chat once user logs out
+
 	public static function logout(){
 		DB::query("DELETE FROM webchat_users WHERE name = '".DB::esc($_SESSION['user']['name'])."'");
 		
@@ -91,10 +94,10 @@ class Chat{
 			$user->update();
 		}
 		
-		// Deleting chats older than 5 minutes and users inactive for 30 seconds
+		// Deletes chats older than 8 minutes and users inactive for 59 seconds
 		
-		DB::query("DELETE FROM webchat_lines WHERE ts < SUBTIME(NOW(),'0:5:0')");
-		DB::query("DELETE FROM webchat_users WHERE last_activity < SUBTIME(NOW(),'0:0:30')");
+		DB::query("DELETE FROM webchat_lines WHERE ts < SUBTIME(NOW(),'0:8:0')");
+		DB::query("DELETE FROM webchat_users WHERE last_activity < SUBTIME(NOW(),'0:0:59')");
 		
 		$result = DB::query('SELECT * FROM webchat_users ORDER BY name ASC LIMIT 18');
 		
@@ -118,7 +121,7 @@ class Chat{
 		$chats = array();
 		while($chat = $result->fetch_object()){
 			
-			// Returning the GMT (UTC) time of the chat creation:
+			// Returns the time that the chat was created
 			
 			$chat->time = array(
 				'hours'		=> gmdate('H',strtotime($chat->ts)),

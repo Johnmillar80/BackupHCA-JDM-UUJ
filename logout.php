@@ -3,7 +3,7 @@ session_start();
 // Destroying All Sessions
 if(session_destroy())
 {
-// Redirecting To Home Page
+// Redirects user to Login Page
 header("Location: login.php");
 }
 ?>

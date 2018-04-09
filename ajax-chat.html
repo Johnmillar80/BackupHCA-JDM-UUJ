@@ -3,17 +3,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Making an AJAX Web Chat With PHP, MySQL and jQuery | Tutorialzine Demo</title>
-
 <link rel="stylesheet" type="text/css" href="jScrollPane.css" />
 <link rel="stylesheet" type="text/css" href="page.css" />
 <link rel="stylesheet" type="text/css" href="chat.css" />
 
 
+ <!--Random Email Generator-->
+
+            <form name="randform" id="randform">
+                <input type="button" id="buttonemail" value="Create Email" onClick="randomString();">&nbsp;
+                <input type="text" id="textemail" placeholder="Copy & Paste Below" name="randomfield" value="">
+            </form>
+
 </head>
 
 <body>
 
-
+<!--Chat-->
 
 <div id="chatContainer">
 
@@ -45,5 +51,6 @@
 <script src="jquery.mousewheel.js"></script>
 <script src="jScrollPane.min.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>

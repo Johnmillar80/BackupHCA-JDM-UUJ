@@ -284,3 +284,38 @@ p.noChats,
 	
 	text-shadow:1px 1px 0 #940f0f;
 }
+
+#randform{
+
+	padding-top: 10px;
+	padding-left: 10px;
+
+}
+
+#buttonemail{
+
+	background-color: orange;
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#textemail{
+
+	background-color: white;
+    border: none;
+    color: black;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

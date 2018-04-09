@@ -1,5 +1,6 @@
 <?php
-//include auth.php file on all secure pages
+//screen once logged in, provides links to user portal
+
 include("verify.php");
 ?>
 <!DOCTYPE html>
