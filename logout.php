@@ -2,10 +2,10 @@
 
 <?php
 session_start();
-// Clears all previous sessions
+// Destroying All Sessions
 if(session_destroy())
 {
-// Redirects user To the login page
+// Redirects user to Login Page
 header("Location: login.php");
 }
 ?>

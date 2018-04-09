@@ -10,7 +10,7 @@
 <body>
 <?php
 require('database.php');
-// When register form is submitted, insert the values into the HCA database.
+// When form is Submitted, insert the values into the database.
 if (isset($_REQUEST['username'])){
         // removes backslashes
     $username =($_REQUEST['username']);
@@ -20,15 +20,23 @@ if (isset($_REQUEST['username'])){
     $email = mysqli_real_escape_string($con,$email);
     $password =($_REQUEST['password']);
     $password = mysqli_real_escape_string($con,$password);
-    $trn_date = date("Y-m-d H:i:s");   
-
-    //Insert values into the Administration table in HCA Database
-        $query = "INSERT into `administration` (username, email,  password, trn_date)
-VALUES ('$username', '$email', '".md5($password)."', '$trn_date')";
+    $trn_date = date("Y-m-d H:i:s");
+    $address =($_REQUEST['address']);
+    $address = mysqli_real_escape_string($con,$address);
+    $university =($_REQUEST['university']);
+    $university = mysqli_real_escape_string($con,$university);
+    $qualification =($_REQUEST['qualification']);
+    $qualification = mysqli_real_escape_string($con,$qualification);
+    $employer =($_REQUEST['employer']);
+    $employer = mysqli_real_escape_string($con,$employer);
+    $nhs_employee_code =($_REQUEST['nhs_employee_code']);
+    $nhs_employee_code = mysqli_real_escape_string($con,$nhs_employee_code);    
+        $query = "INSERT into `councillors` (username, password, email, trn_date, address, university, qualification, employer, nhs_employee_code) /*Inserts into councillors table in HCA database*/
+VALUES ('$username', '".md5($password)."', '$email', '$trn_date', '$address', '$university', '$qualification', '$employer', '$nhs_employee_code')";
         $result = mysqli_query($con,$query);
         if($result){
             echo "<div class='form'>
-<h3>Thank You For Registering! </h3>
+<h3>Thank You For Registering!</h3>
 <br/>Click here to <a href='login.php'>Login</a></div>";
         }
     }else{
@@ -39,6 +47,11 @@ VALUES ('$username', '$email', '".md5($password)."', '$trn_date')";
 <input type="text" name="username" placeholder="Username" required />
 <input type="email" name="email" placeholder="Email" required />
 <input type="password" name="password" placeholder="Password" required />
+<input type="address" name="address" placeholder="Address" required />
+<input type="university" name="university" placeholder="University" required />
+<input type="qualification" name="qualification" placeholder="Qualification" required />
+<input type="employer" name="employer" placeholder="Employer" required />
+<input type="nhs_employee_code" name="nhs_employee_code" placeholder="NHS Employee Code" required />
 <input type="submit" name="submit" value="Register" />
 <p>Return to our Homepage? <a href='../index.html'>Home</a></p>
 </form>
