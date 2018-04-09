@@ -64,17 +64,17 @@ include("verify.php");
 <div class="row">
   <div class="col-sm-4"><div class="team">
   <img src="images/home.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a href="../index.html">Home</a></p>
+  <p><a href="../index.html" target="_blank" >Home</a></p>
 </div></div>
 
   <div class="col-sm-4"><div class="team">
   <img src="images/livechat.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a href="../categories.html">Live Chat</a></p>
+  <p><a href="https://www.mylivechat.com/webconsole/" target="_blank" >Live Chat</a></p>
 </div></div>
 
   <div class="col-sm-4"><div class="team">
   <img src="images/calendarportal.png" alt="Calendar" style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a href="../calendar/index.php">Calendar</a></p>
+  <p><a href="../calendar/index.php" target="_blank" >Calendar</a></p>
 </div></div>
 </div>
 
@@ -85,17 +85,17 @@ include("verify.php");
 <div class="row">
   <div class="col-sm-4"><div class="team">
   <img src="images/mental.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a href="../appointmentchat/ajax-chat.html">Mental</a></p>
+  <p><a href="../appointmentchat/ajax-chat.html" target="_blank" >Mental</a></p>
 </div></div>
 
   <div class="col-sm-4"><div class="team">
   <img src="images/emotion.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a href="../appointmentchat/ajax-chat.html">Emotional</a></p>
+  <p><a href="../appointmentchat/ajax-chat.html" target="_blank" >Emotional</a></p>
 </div></div>
 
   <div class="col-sm-4"><div class="team">
   <img src="images/money.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a href="../appointmentchat/ajax-chat.html">Financial</a></p>
+  <p><a href="../appointmentchat/ajax-chat.html" target="_blank" >Financial</a></p>
 </div></div>
 
 <!--Third Tier Logout-->
