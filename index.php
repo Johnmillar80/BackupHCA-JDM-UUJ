@@ -1,5 +1,6 @@
 <?php
-//screen once logged in, provides links to user portal
+
+//Welcome Page with link to user portal
 
 include("verify.php");
 ?>

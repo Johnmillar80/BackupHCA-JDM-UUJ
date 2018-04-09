@@ -23,7 +23,7 @@ include("verify.php");
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home
+              <a class="nav-link" href="../index.html">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -40,7 +40,7 @@ include("verify.php");
               <a class="nav-link" href="../contact.html">Contact Us</a>
             </li>
            <li class="nav-item">
-              <a class="nav-link" href="../LoginReg/login.php">Log In / Register</a>
+              <a class="nav-link" href="../adminlogin/login.php">Log In / Register</a>
             </li>
           </ul>
         </div>
@@ -59,7 +59,7 @@ include("verify.php");
 <!--Portal Form-->
 
 <div class="form">
-<h3>Councillor Portal</h3>
+<h3>Administration Portal</h3>
 <h3>Welcome to your Home.</h3>
 <div class="row">
   <div class="col-sm-4"><div class="team">
@@ -69,7 +69,7 @@ include("verify.php");
 
   <div class="col-sm-4"><div class="team">
   <img src="images/livechat.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a href="https://www.mylivechat.com/webconsole/" target="_blank" >Live Chat</a></p>
+  <p><a href="https://www.mylivechat.com/dashboard/welcome.ascx" target="_blank" >Live Chat</a></p>
 </div></div>
 
   <div class="col-sm-4"><div class="team">
@@ -101,8 +101,25 @@ include("verify.php");
 <!--Third Tier Logout-->
 
  <div class="col-sm-4"><div class="team">
+  <img src="images/sourcecode.png" style="width:100%" class="w3-circle w3-hover-opacity">
+  <p><a href="https://gist.github.com/" target="_blank" >Source Code</a></p>
+</div></div>
+
+ <div class="col-sm-4"><div class="team">
+  <img src="images/database.png" style="width:100%" class="w3-circle w3-hover-opacity">
+  <p><a href="http://localhost/phpmyadmin/db_structure.php?db=health_chat_anonymous&token=c81062113c23935926e2b82409639807" target="_blank">Database</a></p>
+</div></div>
+
+ <div class="col-sm-4"><div class="team">
+  <img src="images/join_us.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
+  <p><a href="https://www.powr.io/apps/14487484/responses" target="blank" >Join Our Team</a></p>
+</div></div>
+
+<!-- Fourth Tier -->
+
+ <div class="col-sm-4"><div class="team">
   <img style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a></a></p>
+  <p><a href="https://gist.github.com/" target="_blank" ></a></p>
 </div></div>
 
  <div class="col-sm-4"><div class="team">
@@ -110,15 +127,11 @@ include("verify.php");
   <p><a href="logout.php">Logout</a></p>
 </div></div>
 
- <div class="col-sm-4"><div class="team">
-  <img style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a></a></p>
+ <div class="col-sm-4">
 </div></div>
-</div>
-
 
 </div>
- 
+</div> 
 </body>
 
 
@@ -144,7 +157,6 @@ include("verify.php");
 </div>
 </div>
 
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -154,7 +166,7 @@ include("verify.php");
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+  
 </footer>
 
 
