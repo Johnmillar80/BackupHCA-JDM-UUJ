@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Chat Annoymous</title>
+  <title>Health-Chat Annoymous</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,10 @@
   <link rel="information" href="information.html">
   <link rel="about-us" href="about-us.html">
   <link rel="contact-us" href="contact-us.html">
-  <link rel="login" href="login.html">
+  <link rel="login" href="login.php">
+  <link rel= "index" href="index.php">
+
+
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -25,34 +28,31 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Chat Anonymous</a>
+        <a class="navbar-brand" href="#">Health-Chat Anonymous</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="index.html">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="categories.html">Categories</a>
+             <a class="nav-link" href="categories.html">Live Chat</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="information.html">Information</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Information</a>
+              <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Log In / Register</a>
+              <a class="nav-link" href="login.php">Log In / Register</a>
             </li>
           </ul>
         </div>
@@ -63,12 +63,28 @@
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-   <h1>Chat Annoymous</h1>
+   <h1>Health-Chat Annoymous</h1>
    <p>A safe service that's here for you</p> 
   </div>
 </div>
 
 <!--Categories with Images-->
+
+<!--Chat Room Category-->
+
+<section>
+<div class="row" id="Emotion">
+  <div class="col-sm-4">
+    <img class="img-fluid" src="images/chatroom.png" alt="chatroom" width="300" height="300"> 
+  </div>
+<div class="col-sm-8"><h2>Our Health Chat Room</h2>
+  <p> We offer Emotional Health Counselling, please follow the link below to your desired area </p>
+
+  <a href="chatindex.html" class="btn btn-info" role="button">Click Me</a>
+
+</div>
+</div>
+</section>
 
 <!--Emotional Health Category-->
 
@@ -112,22 +128,24 @@
 </div>
 </section>
 
+<script type="text/javascript">function add_chatinline(){var hccid=63544451;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
+add_chatinline(); </script>
+
 </body>
 
 <!--Set Footer per page -->
 
 <footer>
-  <section>
 <!--2nd jumbotron-->    
 <div class="jumbotron-special">
 <div class="container"> 
   <div class="hyperlink"> <!--footer links-->
-    <a href="#" class="hyperlink">Home</a>
-    <a href="#Emotion" class="hyperlink">Categories</a>
-    <a href="#" class="hyperlink">Services</a>
-    <a href="#" class="hyperlink">Information</a>
-    <a href="#" class="hyperlink">About Us</a>
-    <a href="#" class="hyperlink">Contact Us</a>
+    <a href="index.html" class="hyperlink">Home</a>
+    <a href="categories.html" class="hyperlink">Live Chat</a>
+    <a href="information.html" class="hyperlink">Information</a>
+    <a href="about.html" class="hyperlink">About Us</a>
+    <a href="contact.html" class="hyperlink">Contact Us</a>
+    <a href="login.php" class="hyperlink">Login / Register</a>
     <div class="row"> <!--Social Media Icon Links-->
         <div class="col-sm-4"><img class="img-fluid" href="" src="images/FB.png" alt="Facebook" width="100" height="100" ></div>
         <div class="col-sm-4"><img class="img-fluid" href="" src="images/IG.png" alt="Instagram" width="100" height="100"></div>
@@ -136,6 +154,5 @@
       </div>
 </div>
 </div>
-  </section>
 </footer>
 </html>

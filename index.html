@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Chat Annoymous</title>
+  <title>Health-Chat Annoymous</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,8 +14,19 @@
   <link rel="about" href="about.html">
   <link rel="contact" href="contact.html">
   <link rel="login" href="login.html" >
+  <link rel="login" href="login.php">
+  <link rel= "index" href="index.php">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src='https:////code.jquery.com/jquery-3.3.1.min.js'></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzrtNq5XBtKNs7Im0vTOQ8Y6PJVkWEXQk&callback=myMap"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
@@ -25,7 +36,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Chat Anonymous</a>
+        <a class="navbar-brand" href="#">Health-Chat Anonymous</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,10 +48,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="categories.html">Categories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="categories.html">Live Chat</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="information.html">Information</a>
@@ -51,8 +59,8 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Log In / Register</a>
+           <li class="nav-item">
+              <a class="nav-link" href="login.php">Log In / Register</a>
             </li>
           </ul>
         </div>
@@ -63,9 +71,35 @@
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-   <h1>Chat Annoymous</h1>
+   <h1>Health-Chat Annoymous</h1>
    <p>A safe service that's here for you</p> 
   </div>
+</div>
+
+<!--Container With Coloured Background-->
+
+
+<div class="row">
+  <div class="col-sm-6">
+<video height="300" width="600" controls autoplay>
+  <source src="images/nhs.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<p> Video courtesy of 
+<a href="https://www.nhs.uk/livewell/mentalhealth/Pages/Mentalhealthhome.aspx" target="_blank">NHS Mental Awareness</a>.
+</p></div>
+
+<div class="col-sm-6">
+  <h3> Welcome to Health-Chat Annoymous, here we strive to offer our best councilling services in order to help our users.<br></br>
+
+We have currently 5 councillors which will continue to grow! Offering services across three areas : Financial, Mental and Emotional Health. <br></br>
+
+Each user is completely annoymous and no data or personal information will be stored in our systems databases. <br></br>
+
+To begin speaking to our councillors please select the "Live Chat" section in our navigation menu and choose your desired area! <br></br>
+
+We hope you enjoy your visit!</h3>
+</div>
 </div>
 
 
@@ -75,25 +109,23 @@
 <!--Set Footer per page -->
 
 <footer>
-	<section>
-<!--2nd jumbotron-->		
+<!--2nd jumbotron-->    
 <div class="jumbotron-special">
 <div class="container"> 
   <div class="hyperlink"> <!--footer links-->
-    <a href="#" class="hyperlink">Home</a>
-    <a href="#Emotion" class="hyperlink">Categories</a>
-    <a href="#" class="hyperlink">Services</a>
-    <a href="#" class="hyperlink">Information</a>
-    <a href="#" class="hyperlink">About Us</a>
-    <a href="#" class="hyperlink">Contact Us</a>
-		<div class="row"> <!--Social Media Icon Links-->
-  			<div class="col-sm-4"><img class="img-fluid" href="" src="images/FB.png" alt="Facebook" width="100" height="100" ></div>
-  			<div class="col-sm-4"><img class="img-fluid" href="" src="images/IG.png" alt="Instagram" width="100" height="100"></div>
-  			<div class="col-sm-4"><img class="img-fluid" href="" src="images/TW.png" alt="Twitter" width="100" height="100"></div>
-		</div>
-		  </div>
+    <a href="index.html" class="hyperlink">Home</a>
+    <a href="categories.html" class="hyperlink">Live Chat</a>
+    <a href="information.html" class="hyperlink">Information</a>
+    <a href="about.html" class="hyperlink">About Us</a>
+    <a href="contact.html" class="hyperlink">Contact Us</a>
+    <a href="login.php" class="hyperlink">Login / Register</a>
+    <div class="row"> <!--Social Media Icon Links-->
+        <div class="col-sm-4"><img class="img-fluid" href="" src="images/FB.png" alt="Facebook" width="100" height="100" ></div>
+        <div class="col-sm-4"><img class="img-fluid" href="" src="images/IG.png" alt="Instagram" width="100" height="100"></div>
+        <div class="col-sm-4"><img class="img-fluid" href="" src="images/TW.png" alt="Twitter" width="100" height="100"></div>
+    </div>
+      </div>
 </div>
 </div>
-	</section>
 </footer>
 </html>

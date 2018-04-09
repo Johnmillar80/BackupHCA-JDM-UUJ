@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Health-Chat Room</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" type="text/css" media="screen"
+    />
+    <link rel="stylesheet" href="chatroom.css" type="text/css" media="screen" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1> Welcome to our Health-Chat Room! </h1>
+        </header>
+        <main>
+
+            <!--Random Generator-->
+            <form name="randform">
+                <input type="button" value="Create Username" onClick="randomString();">&nbsp;
+                <input type="text" placeholder="Copy & Paste Below" name="randomfield" value="">
+            </form>
+
+            <!--UserName Input-->
+            <div class="userSettings">
+                <label for="userName">Username:</label> 
+                <input id="userName" type="text" placeholder="Enter Unique ID" maxlength="60" value="">
+            </div>
+
+             <!--Live Chat Room Input-->
+            <div class="chat">
+                <div id="chatOutput"></div>
+                <input id="chatInput" type="text" placeholder="Input Text here" maxlength="150">
+                <button id="chatSend">Send</button>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

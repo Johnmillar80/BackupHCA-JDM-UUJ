@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Chat Annoymous</title>
+  <title>Health-Chat Annoymous</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,6 +13,10 @@
   <link rel="information" href="information.html">
   <link rel="about" href="about.html">
   <link rel="contact" href="contact.html">
+  <link rel="login" href="login.php">
+  <link rel= "index" href="index.php">
+
+ 
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -24,7 +28,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Chat Anonymous</a>
+        <a class="navbar-brand" href="#">Health-Chat Anonymous</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,10 +40,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="categories.html">Categories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="categories.html">Live Chat</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="information.html">Information</a>
@@ -51,7 +52,7 @@
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login-register.html">Log In / Register</a>
+              <a class="nav-link" href="login.php">Log In / Register</a>
             </li>
           </ul>
         </div>
@@ -62,37 +63,76 @@
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-   <h1>Chat Annoymous</h1>
+   <h1>Health-Chat Annoymous</h1>
    <p>A safe service that's here for you</p> 
   </div>
 </div>
 
-<p>Information</p>
+<!--Information Table -->
+
+<div class="container">
+  <h2>NHS Advice</h2>
+  <p> Below we have included live updated links to the NHS information sections, this means that the information read on our site will always be updated and our users will not experience issues with out of date advice. If seeking information or extra advice please select from the links in the table below or begin a live chat with our full trained councillors for one to one advice. </p>                                                                                      
+  <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Category</th>
+        <th>URL</th>
+        <th>Information</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Mental Health</td>
+        <td><a href="https://www.nhs.uk/livewell/mentalhealth/Pages/Mentalhealthhome.aspx">https://www.nhs.uk/livewell/mentalhealth/Pages/Mentalhealthhome.aspx</a></td>
+        <td>Please follow through this link to find out up-to-date information on Mental Health. If the link is broken highlight the link and press "ctrl + C" to copy it and press "ctrl + V" to paste it into the searchbar</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>2</td>
+        <td>Emotional Health</td>
+        <td><a href="https://www.nhs.uk/conditions/stress-anxiety-depression/">https://www.nhs.uk/conditions/stress-anxiety-depression/</a></td>
+        <td>Please follow through this link to find out up-to-date information on Emotional Health. If the link is broken highlight the link and press "ctrl + C" to copy it and press "ctrl + V" to paste it into the searchbar</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>3</td>
+        <td>Financial Health</td>
+        <td><a href="https://www.nhs.uk/Livewell/mentalhealth/Pages/money-worries-finances-and-relationships.aspx">https://www.nhs.uk/Livewell/mentalhealth/Pages/money-worries-finances-and-relationships.aspx</a></td>
+        <td>Please follow through this link to find out up-to-date information on Financial Health. If the link is broken highlight the link and press "ctrl + C" to copy it and press "ctrl + V" to paste it into the searchbar</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
 
 </body>
 
 <!--Set Footer per page -->
 
 <footer>
-	<section>
-<!--2nd jumbotron-->		
+<!--2nd jumbotron-->    
 <div class="jumbotron-special">
 <div class="container"> 
   <div class="hyperlink"> <!--footer links-->
-    <a href="#" class="hyperlink">Home</a>
-    <a href="#Emotion" class="hyperlink">Categories</a>
-    <a href="#" class="hyperlink">Services</a>
-    <a href="#" class="hyperlink">Information</a>
-    <a href="#" class="hyperlink">About Us</a>
-    <a href="#" class="hyperlink">Contact Us</a>
-		<div class="row"> <!--Social Media Icon Links-->
-  			<div class="col-sm-4"><img class="img-fluid" href="" src="images/FB.png" alt="Facebook" width="100" height="100" ></div>
-  			<div class="col-sm-4"><img class="img-fluid" href="" src="images/IG.png" alt="Instagram" width="100" height="100"></div>
-  			<div class="col-sm-4"><img class="img-fluid" href="" src="images/TW.png" alt="Twitter" width="100" height="100"></div>
-		</div>
-		  </div>
+    <a href="index.html" class="hyperlink">Home</a>
+    <a href="categories.html" class="hyperlink">Live Chat</a>
+    <a href="information.html" class="hyperlink">Information</a>
+    <a href="about.html" class="hyperlink">About Us</a>
+    <a href="contact.html" class="hyperlink">Contact Us</a>
+    <a href="login.php" class="hyperlink">Login / Register</a>
+    <div class="row"> <!--Social Media Icon Links-->
+        <div class="col-sm-4"><img class="img-fluid" href="" src="images/FB.png" alt="Facebook" width="100" height="100" ></div>
+        <div class="col-sm-4"><img class="img-fluid" href="" src="images/IG.png" alt="Instagram" width="100" height="100"></div>
+        <div class="col-sm-4"><img class="img-fluid" href="" src="images/TW.png" alt="Twitter" width="100" height="100"></div>
+    </div>
+      </div>
 </div>
 </div>
-	</section>
 </footer>
 </html>
