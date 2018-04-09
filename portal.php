@@ -54,7 +54,7 @@ include("verify.php");
               <a class="nav-link" href="../contact.html">Contact Us</a>
             </li>
            <li class="nav-item">
-              <a class="nav-link" href="../LoginReg/login.php">Log In / Register</a>
+              <a class="nav-link" href="../login.php">Log In / Register</a>
             </li>
           </ul>
         </div>
@@ -73,8 +73,8 @@ include("verify.php");
 <!--Portal Form-->
 
 <div class="form">
-<h3>Councillor Portal</h3>
-<h3>Welcome to your Home.</h3>
+<p>Portal</p>
+<p>Welcome to your Home.</p>
 <div class="row">
   <div class="col-sm-4"><div class="team">
   <img src="images/home.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
@@ -83,55 +83,19 @@ include("verify.php");
 
   <div class="col-sm-4"><div class="team">
   <img src="images/livechat.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a href="../categories.html">Live Chat</a></p>
+  <p><a href="../logout.php">Live Chat</a></p>
 </div></div>
 
   <div class="col-sm-4"><div class="team">
-  <img src="images/calendarportal.png" alt="Calendar" style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a href="../calendar/index.php">Calendar</a></p>
-</div></div>
-</div>
-
-<!-- Second Tier Private Appointments-->
-
-<h3>Private Appointments</h3>
-
-<div class="row">
-  <div class="col-sm-4"><div class="team">
-  <img src="images/mental.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a href="../appointmentchat/ajax-chat.html">Mental</a></p>
-</div></div>
-
-  <div class="col-sm-4"><div class="team">
-  <img src="images/emotion.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a href="../appointmentchat/ajax-chat.html">Emotional</a></p>
-</div></div>
-
-  <div class="col-sm-4"><div class="team">
-  <img src="images/money.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a href="../appointmentchat/ajax-chat.html">Financial</a></p>
-</div></div>
-
-<!--Third Tier Logout-->
-
- <div class="col-sm-4"><div class="team">
-  <img style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a></a></p>
-</div></div>
-
- <div class="col-sm-4"><div class="team">
   <img src="images/logout.png" alt="Boss" style="width:100%" class="w3-circle w3-hover-opacity">
   <p><a href="logout.php">Logout</a></p>
 </div></div>
-
- <div class="col-sm-4"><div class="team">
-  <img style="width:100%" class="w3-circle w3-hover-opacity">
-  <p><a></a></p>
-</div></div>
 </div>
 
 
 </div>
+
+
  
 </body>
 
